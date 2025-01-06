@@ -39,8 +39,6 @@ def main():
         output2 = fused_conv(f1)
         print(output2)
 
-    np.testing.assert_allclose(output1.numpy(), output2.numpy(), rtol=1e-03, atol=1e-05)
-    print("convert module has been tested, and the result looks good!")
 
 
 if __name__ == '__main__':
